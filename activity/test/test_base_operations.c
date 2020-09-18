@@ -49,7 +49,7 @@ void test_oct(void) {
   
 }
 void test_bdt(void) {
-  CU_ASSERT(439== convertbinarytodecimal(110110111));
+  CU_ASSERT(1010== convertdecimaltobinary(10));
    
   
   
