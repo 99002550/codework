@@ -10,7 +10,7 @@ src/base.c\
 # All test source files
 TEST_SRC = src/base.c\
 test/test_base_operations.c
-TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
+TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out -lm
 
 # All include folders with header files
 INC	= -Iinc
