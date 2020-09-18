@@ -22,7 +22,7 @@ int main() {
   
   
   /* Add your test functions in this format for testing*/
-  CU_add_test(suite, "prime", test_prime);
+  CU_add_test(suite, "oct", test_oct);
   //CU_add_test(suite, "not prime", test_notprime);
   
 /* Note: Do not edit START*/
