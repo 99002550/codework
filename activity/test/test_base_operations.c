@@ -1,5 +1,6 @@
 #include <CUnit/Basic.h>
 #include <CUnit/CUnit.h>
+#include <math.h>
 
 /* Modify these two lines according to the project */
 #include <base.h>
