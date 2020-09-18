@@ -1,15 +1,15 @@
 # Name of the project
-PROJECT_NAME = prime
+PROJECT_NAME = base
 # Output directory
 BUILD = build
 
 # All source code files
 SRC = main.c\
-src/prime.c\
+src/base.c\
 
 # All test source files
-TEST_SRC = src/prime.c\
-test/test_prime_operations.c
+TEST_SRC = src/base.c\
+test/test_base_operations.c
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
 # All include folders with header files
