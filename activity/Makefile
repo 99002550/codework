@@ -10,7 +10,7 @@ src/base.c\
 # All test source files
 TEST_SRC = src/base.c\
 test/test_base_operations.c
-TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out -lm
+TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out 
 
 # All include folders with header files
 INC	= -Iinc
@@ -39,7 +39,7 @@ doc:
 
 # Build and run the unit tests
 test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lcunit
+	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lcunit -lm
 	./$(TEST_OUTPUT)
 
 # Remove all the built files, invoke by `make clean`
