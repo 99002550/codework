@@ -1,4 +1,4 @@
-#include "prime.h"
+#include "base.h"
 
 int main(void)
 {
