@@ -8,6 +8,7 @@
 
 /* Prototypes for all the test functions */
 void test_oct(void);
+void test_bdt(void);
 
 /*void test_notprime(void);*/
 
@@ -24,6 +25,7 @@ int main() {
   
   /* Add your test functions in this format for testing*/
   CU_add_test(suite, "oct", test_oct);
+  CU_add_test(suite, "bdt", test_bdt);
   //CU_add_test(suite, "not prime", test_notprime);
   
 /* Note: Do not edit START*/
@@ -46,6 +48,13 @@ void test_oct(void) {
   
   
 }
+void test_bdt(void) {
+  CU_ASSERT(439== convertbinarytodecimal(110110111));
+   
+  
+  
+}
+
 
 /*void test_notprime(void) {
  # CU_ASSERT(1 == notprime(4));
