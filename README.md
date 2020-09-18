@@ -7,3 +7,5 @@ Application for base conversion
 
 
 ![cppcheck-action](https://github.com/99002550/codework/workflows/cppcheck-action/badge.svg)
+
+![Unit testing](https://github.com/99002550/codework/workflows/Unit%20testing/badge.svg)
