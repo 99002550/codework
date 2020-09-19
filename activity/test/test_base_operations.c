@@ -63,7 +63,7 @@ void test_dec2bin(void) {
   
 }
 void test_oct2dec(void) {
-  CU_ASSERT(10== convertOctalToDecimal(88));
+  CU_ASSERT(255== convertOctalToDecimal(377));
    
   
   
