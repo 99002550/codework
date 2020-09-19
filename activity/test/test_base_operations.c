@@ -28,8 +28,12 @@ int main() {
   
   
   /* Add your test functions in this format for testing*/
-  CU_add_test(suite, "oct", test_oct);
-  CU_add_test(suite, "bdt", test_bdt);
+  CU_add_test(suite, "bin2dec", test_bin2dec);
+  CU_add_test(suite, "dec2bin", test_dec2bin);
+  CU_add_test(suite, "oct2dec", test_oct2dec);
+  CU_add_test(suite, "dec2oct", test_dec2oct);
+  CU_add_test(suite, "dec2hex", test_dec2hex);
+  CU_add_test(suite, "bin2oct", test_bin2oct);
   //CU_add_test(suite, "not prime", test_notprime);
   
 /* Note: Do not edit START*/
