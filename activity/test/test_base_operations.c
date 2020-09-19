@@ -52,25 +52,30 @@ int main() {
 /* Write all the test functions */ 
 void test_bin2dec(void) {
   CU_ASSERT(439== convertbinarytodecimal(110110111));
-   
+  CU_ASSERT(4== convertbinarytodecimal(00000100));
+  CU_ASSERT(0== convertbinarytodecimal(0));
   
   
 }
 void test_dec2bin(void) {
   CU_ASSERT(1010== convertdecimaltobinary(10));
-   
+  CU_ASSERT(0100== convertdecimaltobinary(4));
+  CU_ASSERT(0== convertdecimaltobinary(0));
   
   
 }
 void test_oct2dec(void) {
   CU_ASSERT(255== convertOctalToDecimal(377));
+  CU_ASSERT(302== convertOctalToDecimal(456));
+  CU_ASSERT(0== convertOctalToDecimal(0));
    
   
   
 }
 void test_dec2oct(void) {
   CU_ASSERT(12== convertDecimalToOctal(10));
-   
+  CU_ASSERT(17== convertDecimalToOctal(15));
+  CU_ASSERT(0== convertDecimalToOctal(0));
   
   
 }
@@ -82,6 +87,8 @@ void test_dec2oct(void) {
 //}
 void test_bin2oct(void) {
   CU_ASSERT(17== convertbitooctal(1111));
+  CU_ASSERT(21== convertbitooctal(10001));
+  CU_ASSERT(0== convertbitooctal(0));
    
   
   
