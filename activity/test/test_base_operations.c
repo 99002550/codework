@@ -59,7 +59,7 @@ void test_dec2bin(void) {
   
 }
 void test_oct2dec(void) {
-  CU_ASSERT(439== convertbinarytodecimal(110110111));
+  CU_ASSERT(439== convertOctalToDecimal(110110111));
    
   
   
