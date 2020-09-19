@@ -49,7 +49,7 @@ int main() {
 /* Write all the test functions */ 
 void test_bin2dec(void) {
   CU_ASSERT(439== convertbinarytodecimal(110110111));
-  CU_ASSERT(4== convertbinarytodecimal(00000100));
+  CU_ASSERT(170== convertbinarytodecimal(10101010));
   CU_ASSERT(0== convertbinarytodecimal(0));
   
   
