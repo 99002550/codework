@@ -11,10 +11,8 @@ void test_bin2dec(void);
 void test_dec2bin(void);
 void test_oct2dec(void);
 void test_dec2oct(void);
-//void test_dec2hex(void);
+void test_dec2hex(void);
 void test_bin2oct(void);
-
-/*void test_notprime(void);*/
 
 
 /* Start of the application test */
@@ -32,10 +30,9 @@ int main() {
   CU_add_test(suite, "dec2bin", test_dec2bin);
   CU_add_test(suite, "oct2dec", test_oct2dec);
   CU_add_test(suite, "dec2oct", test_dec2oct);
-  //CU_add_test(suite, "dec2hex", test_dec2hex);
+  CU_add_test(suite, "dec2hex", test_dec2hex);
   CU_add_test(suite, "bin2oct", test_bin2oct);
-  //CU_add_test(suite, "not prime", test_notprime);
-  
+ 
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
   CU_basic_set_mode(CU_BRM_VERBOSE);
