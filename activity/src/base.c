@@ -7,15 +7,15 @@
 
 
 
-   int convertbinarytodecimal(long long n) {
+   int convertbinarytodecimal(long long num) {
 	//long long n;
     //printf("Enter a binary number: ");
-    scanf("%lld", &n);
+    scanf("%lld", &num);
     //printf("%lld in binary = %d in decimal", n, convertbinarytodecimal(n));
     int dec = 0, i = 0, rem;
-    while (n != 0) {
-        rem = n % 10;
-        n /= 10;
+    while (num != 0) {
+        rem = num % 10;
+        num /= 10;
         dec += rem * pow(2, i);
         ++i;
     }
@@ -26,17 +26,17 @@
 
 
 
-long long convertdecimaltobinary(int n) {
+long long convertdecimaltobinary(int num) {
 	//int n;
    // printf("Enter a decimal number: ");
-    scanf("%d", &n);
+    scanf("%d", &num);
    // printf("%d in decimal = %lld in binary", n, convertdecimaltobinary(n));
     long long bin = 0;
     int rem, i = 1, step = 1;
-    while (n != 0) {
-        rem = n % 2;
-        printf("Step %d: %d/2, Remainder = %d, Quotient = %d\n", step++, n, rem, n / 2);
-        n /= 2;
+    while (num!= 0) {
+        rem = num % 2;
+        printf("Step %d: %d/2, Remainder = %d, Quotient = %d\n", step++, num, rem, num / 2);
+        num /= 2;
         bin += rem * i;
         i *= 10;
     }
