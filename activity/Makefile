@@ -42,7 +42,7 @@ test:$(BUILD)
 	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lcunit -lm
 	./$(TEST_OUTPUT)
 
-# Remove all the built files, invoke by `make clean`
+# Remove all the built files, invoke by `make clean
 clean:
 	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
 
