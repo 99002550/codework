@@ -56,7 +56,7 @@ void test_bin2dec(void) {
 }
 void test_dec2bin(void) {
   CU_ASSERT(1010== convertdecimaltobinary(10));
-  CU_ASSERT(0100== convertdecimaltobinary(4));
+  CU_ASSERT(11001== convertdecimaltobinary(25));
   CU_ASSERT(0== convertdecimaltobinary(0));
   
   
