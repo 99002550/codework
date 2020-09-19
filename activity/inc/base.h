@@ -1,5 +1,5 @@
 /**
-* @file factorial.h
+* @file base.h
 *
 */
 #ifndef __BASE_H__
@@ -9,13 +9,6 @@
 #include <stdlib.h>
 #include <stdio_ext.h>
 #include <math.h>
-
-/**
-* Identifies whether the number is prime or note
-* @param[in] number for which prime to be checked
-* @return 0 of the prime number
-* @note Returns 1 for non prime numbers
-*/
 
 int convertbinarytodecimal(long long n);
 long long convertdecimaltobinary(int n);
