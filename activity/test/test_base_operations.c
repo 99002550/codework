@@ -79,12 +79,12 @@ void test_dec2oct(void) {
   
   
 }
-//void test_dec2hex(void) {
-//  CU_ASSERT(A== decimal_to_hexadecimal(10));
+void test_dec2hex(void) {
+  CU_ASSERT(64== decimal_to_hexadecimal(100));
    
   
   
-//}
+}
 void test_bin2oct(void) {
   CU_ASSERT(17== convertbitooctal(1111));
   CU_ASSERT(21== convertbitooctal(10001));
