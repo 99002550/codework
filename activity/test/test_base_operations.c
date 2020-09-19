@@ -59,25 +59,25 @@ void test_dec2bin(void) {
   
 }
 void test_oct2dec(void) {
-  CU_ASSERT(439== convertOctalToDecimal(110110111));
+  CU_ASSERT(10== convertOctalToDecimal(88));
    
   
   
 }
 void test_dec2oct(void) {
-  CU_ASSERT(1010== convertdecimaltobinary(10));
+  CU_ASSERT(12== convertDecimalToOctal(10));
    
   
   
 }
 void test_dec2hex(void) {
-  CU_ASSERT(439== convertbinarytodecimal(110110111));
+  CU_ASSERT(A== decimal_to_hexadecimal(10));
    
   
   
 }
 void test_bin2oct(void) {
-  CU_ASSERT(1010== convertdecimaltobinary(10));
+  CU_ASSERT(17== convertbitooctal(1111));
    
   
   
