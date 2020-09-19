@@ -1,13 +1,5 @@
-
 #include<base.h>
-//#include<math.h>
-
-
-
-
-
-
-   int convertbinarytodecimal(long long num) {
+ int convertbinarytodecimal(long long num) {
 	//long long n;
     //printf("Enter a binary number: ");
     scanf("%lld", &num);
@@ -22,9 +14,6 @@
     return dec;
        
    }
-
-
-
 
 long long convertdecimaltobinary(int num) {
 	//int n;
@@ -42,8 +31,6 @@ long long convertdecimaltobinary(int num) {
     }
     return bin;
 }
-
-
 
 long long convertOctalToDecimal(int octalNumber){
 //int octalNumber;
@@ -65,8 +52,6 @@ long long convertOctalToDecimal(int octalNumber){
 
     return decimalNumber;
 }
-
-
 
 int convertDecimalToOctal(int decimalNumber)
 {
@@ -103,9 +88,6 @@ int decimal_to_hexadecimal(int x)
       }
       return hexadecimal_number;
 }
- 
-
-
 
 int convertbitooctal(long long bin) {
 //	long long bin;
