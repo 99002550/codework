@@ -7,8 +7,12 @@
 #define PROJECT_NAME    "base"
 
 /* Prototypes for all the test functions */
-void test_oct(void);
-void test_bdt(void);
+void test_bin2dec(void);
+void test_dec2bin(void);
+void test_oct2dec(void);
+void test_dec2oct(void);
+void test_dec2hex(void);
+void test_bin2oct(void);
 
 /*void test_notprime(void);*/
 
@@ -42,13 +46,37 @@ int main() {
 }
 
 /* Write all the test functions */ 
-void test_oct(void) {
+void test_bin2dec(void) {
   CU_ASSERT(439== convertbinarytodecimal(110110111));
    
   
   
 }
-void test_bdt(void) {
+void test_dec2bin(void) {
+  CU_ASSERT(1010== convertdecimaltobinary(10));
+   
+  
+  
+}
+void test_oct2dec(void) {
+  CU_ASSERT(439== convertbinarytodecimal(110110111));
+   
+  
+  
+}
+void test_dec2oct(void) {
+  CU_ASSERT(1010== convertdecimaltobinary(10));
+   
+  
+  
+}
+void test_dec2hex(void) {
+  CU_ASSERT(439== convertbinarytodecimal(110110111));
+   
+  
+  
+}
+void test_bin2oct(void) {
   CU_ASSERT(1010== convertdecimaltobinary(10));
    
   
@@ -56,10 +84,5 @@ void test_bdt(void) {
 }
 
 
-/*void test_notprime(void) {
- # CU_ASSERT(1 == notprime(4));
-  
-  
-#}*/
 
 
