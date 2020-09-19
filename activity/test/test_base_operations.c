@@ -11,7 +11,7 @@ void test_bin2dec(void);
 void test_dec2bin(void);
 void test_oct2dec(void);
 void test_dec2oct(void);
-void test_dec2hex(void);
+//void test_dec2hex(void);
 void test_bin2oct(void);
 
 /*void test_notprime(void);*/
@@ -32,7 +32,7 @@ int main() {
   CU_add_test(suite, "dec2bin", test_dec2bin);
   CU_add_test(suite, "oct2dec", test_oct2dec);
   CU_add_test(suite, "dec2oct", test_dec2oct);
-  CU_add_test(suite, "dec2hex", test_dec2hex);
+  //CU_add_test(suite, "dec2hex", test_dec2hex);
   CU_add_test(suite, "bin2oct", test_bin2oct);
   //CU_add_test(suite, "not prime", test_notprime);
   
@@ -74,12 +74,12 @@ void test_dec2oct(void) {
   
   
 }
-void test_dec2hex(void) {
-  CU_ASSERT(A== decimal_to_hexadecimal(10));
+//void test_dec2hex(void) {
+//  CU_ASSERT(A== decimal_to_hexadecimal(10));
    
   
   
-}
+//}
 void test_bin2oct(void) {
   CU_ASSERT(17== convertbitooctal(1111));
    
